@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Data
 public class GuestbookDTO {
 
@@ -18,6 +18,4 @@ public class GuestbookDTO {
     private String content;
     private String writer;
     private LocalDateTime regDate, modDate;
-
-
 }

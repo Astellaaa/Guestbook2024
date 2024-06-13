@@ -48,6 +48,7 @@ public class GuestbookRepositoryTest {
         }
     }
 
+// 단일항목 검색만
     @Test
     public void testQuery1(){
         Pageable pageable = PageRequest.of(0, 10, Sort.by("gno").descending());
@@ -63,6 +64,7 @@ public class GuestbookRepositoryTest {
         });
     }
 
+//    다중항목 검색 및 제한조건식
     @Test
     public void testQuery2() {
         Pageable pageable = PageRequest.of(0, 10, Sort.by("gno").descending());
